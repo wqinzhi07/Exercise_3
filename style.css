@@ -1,0 +1,100 @@
+body {
+      margin: 0;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    h1 {
+        font: oblique 50px "lucida grande", tahoma, verdana, arial, sans-serif;
+    }
+
+    h3 {
+        font: oblique 30px "lucida grande", tahoma, verdana, arial, sans-serif;
+    }
+
+    h4 {
+        font: oblique 20px "lucida grande", tahoma, verdana, arial, sans-serif;
+    }
+
+    p {
+        font: oblique 20px "lucida grande", tahoma, verdana, arial, sans-serif;
+    }
+
+    p::first-letter {
+        font-size: 200%;
+        color: rgb(158, 5, 5);
+      }
+
+    header, footer {
+      background-color: #ff8787;
+      color: #c1ffc3;
+      padding: 1em;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 3fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    header, footer, nav, aside{
+      padding: 10px;
+      background-color: #ff8787;
+    }
+    
+    aside::before {
+        content: 'TomatoTomatoTomatoTomato';
+        display: block;
+        background-color: #198231;
+        opacity: 50%;
+        height: 20px; 
+        color: #fff;
+        font: oblique 20px "lucida grande", tahoma, verdana, arial, sans-serif;
+      }
+      
+      aside::after {
+        content: 'TomatoTomatoTomatoTomato';
+        display: block;
+        background-color: #198231;
+        opacity: 50%;
+        height: 20px; 
+        color: #fff;
+        font: oblique 20px "lucida grande", tahoma, verdana, arial, sans-serif;
+      }
+
+    article {
+      padding: 10px;
+      background-color: #ffffff;
+    }
+
+    nav:hover, aside:hover {
+        background-color: #ffbf00;
+        transition: background-color 0.3s ease; 
+      }
+
+    img:hover {
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+      }
+
+
+      .wrapper {
+        width: 500px; /* Set a fixed width for the wrapper */
+        height: auto; /* Set a dynamic height for the wrapper */
+        display: flex;
+        align-content: center; /* This will vertically center your images */
+    }
+
+    
+    #two {
+        display: none;
+    }
+    .wrapper:hover #one {
+        display: none;
+    }
+    .wrapper:hover #two {
+        display: block; 
+    }
+
